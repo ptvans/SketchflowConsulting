@@ -2,12 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+
+    <!-- App title -->
+    <title>Pivot — Career Exploration</title>
+    <meta name="description" content="Daily career exploration for people who are done settling. Find your next move, one action at a time." />
+
+    <!-- PWA / home screen meta -->
+    <meta name="application-name" content="Pivot" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Pivot" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#080810" />
+
+    <!-- Apple touch icon (fallback — a real icon would be added in production) -->
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pivot — Career Exploration" />
+    <meta property="og:description" content="Daily career picks for the career-curious and job-insecure alike." />
+
+    <!-- Prevent iOS from auto-formatting phone numbers -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Safe area support for notched phones -->
+    <style>
+      :root {
+        --sat: env(safe-area-inset-top);
+        --sab: env(safe-area-inset-bottom);
+        --sal: env(safe-area-inset-left);
+        --sar: env(safe-area-inset-right);
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <!-- This script injects a replit badge into the page, please feel free to remove this line -->
-    <script type="text/javascript" src="https://replit.com/public/js/replit-badge-v3.js"></script>
   </body>
 </html>
